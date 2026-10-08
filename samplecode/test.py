@@ -30,7 +30,7 @@ def girl(data):
             age.append(eligibility)
         else:
             eligibility= "mature"
-            age.append(eligibility)
+            age.append(eligibility) 
     return age
 result=girl(list)
 print(result)
