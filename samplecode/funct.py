@@ -7,3 +7,4 @@ def num(data):
 num_list=[10,20,30,40,50]
 result=num(num_list)
 print(result)
+
