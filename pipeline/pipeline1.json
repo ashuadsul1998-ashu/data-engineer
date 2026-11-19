@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "copyapitotxt",
+				"name": "copygithubcode",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -16,36 +16,32 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "JsonSource",
+						"type": "BinarySource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
 							"requestMethod": "GET"
 						},
 						"formatSettings": {
-							"type": "JsonReadSettings"
+							"type": "BinaryReadSettings"
 						}
 					},
 					"sink": {
-						"type": "JsonSink",
+						"type": "BinarySink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings",
-							"copyBehavior": "PreserveHierarchy"
-						},
-						"formatSettings": {
-							"type": "JsonWriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "Json2",
+						"referenceName": "Binary3",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Json1",
+						"referenceName": "storageaccountnode",
 						"type": "DatasetReference"
 					}
 				]
