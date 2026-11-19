@@ -1,0 +1,16 @@
+{
+	"name": "bom-factory111",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4f3856db-e922-4421-b681-f6217a008c92",
+		"tenantId": "44d5fe92-6744-492d-90db-75957198335d"
+	}
+}
