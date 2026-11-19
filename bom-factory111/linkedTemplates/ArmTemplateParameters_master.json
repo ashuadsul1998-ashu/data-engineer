@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "bom-factory111"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"HttpServer2_password": {
+			"value": ""
+		},
+		"HttpServer3_password": {
+			"value": ""
+		},
+		"HttpServer4_password": {
+			"value": ""
+		},
+		"githubls_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://bomstorage333uat.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://txt-c.li/api/forms"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "CloudSA90ad2881"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://newgenindia-my.sharepoint.com"
+		},
+		"HttpServer2_properties_typeProperties_userName": {
+			"value": "CloudSA90ad2881"
+		},
+		"HttpServer3_properties_typeProperties_url": {
+			"value": "https://newgenindia-my.sharepoint.com/:t:/g/personal/sagar_khilari_newgensoft_com/IQBIMb2ZCWQGRZOwDqr33hNpATqCcey632PbQth1U-Rjj8M?e=iGbwQa"
+		},
+		"HttpServer3_properties_typeProperties_userName": {
+			"value": "CloudSA90ad2881"
+		},
+		"HttpServer4_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/users"
+		},
+		"HttpServer4_properties_typeProperties_userName": {
+			"value": "CloudSA90ad2881"
+		},
+		"githubls_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/ashuadsul1998-ashu/data-engineer/refs/heads/main/samplecode/calculator.py"
+		},
+		"githubls_properties_typeProperties_userName": {
+			"value": "CloudSA90ad2881"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

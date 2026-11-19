@@ -1,0 +1,161 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "bom-factory111"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"HttpServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer1'"
+		},
+		"HttpServer2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer2'"
+		},
+		"HttpServer3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer3'"
+		},
+		"HttpServer4_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer4'"
+		},
+		"githubls_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'githubls'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://bomstorage333uat.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://txt-c.li/api/forms"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "CloudSA90ad2881"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://newgenindia-my.sharepoint.com"
+		},
+		"HttpServer2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "CloudSA90ad2881"
+		},
+		"HttpServer3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://newgenindia-my.sharepoint.com/:t:/g/personal/sagar_khilari_newgensoft_com/IQBIMb2ZCWQGRZOwDqr33hNpATqCcey632PbQth1U-Rjj8M?e=iGbwQa"
+		},
+		"HttpServer3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "CloudSA90ad2881"
+		},
+		"HttpServer4_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://jsonplaceholder.typicode.com/users"
+		},
+		"HttpServer4_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "CloudSA90ad2881"
+		},
+		"githubls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/ashuadsul1998-ashu/data-engineer/refs/heads/main/samplecode/calculator.py"
+		},
+		"githubls_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "CloudSA90ad2881"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "bom-factory111_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"HttpServer1_password": {
+						"value": "[parameters('HttpServer1_password')]"
+					},
+					"HttpServer2_password": {
+						"value": "[parameters('HttpServer2_password')]"
+					},
+					"HttpServer3_password": {
+						"value": "[parameters('HttpServer3_password')]"
+					},
+					"HttpServer4_password": {
+						"value": "[parameters('HttpServer4_password')]"
+					},
+					"githubls_password": {
+						"value": "[parameters('githubls_password')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_userName')]"
+					},
+					"HttpServer2_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer2_properties_typeProperties_url')]"
+					},
+					"HttpServer2_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer2_properties_typeProperties_userName')]"
+					},
+					"HttpServer3_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer3_properties_typeProperties_url')]"
+					},
+					"HttpServer3_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer3_properties_typeProperties_userName')]"
+					},
+					"HttpServer4_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer4_properties_typeProperties_url')]"
+					},
+					"HttpServer4_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer4_properties_typeProperties_userName')]"
+					},
+					"githubls_properties_typeProperties_url": {
+						"value": "[parameters('githubls_properties_typeProperties_url')]"
+					},
+					"githubls_properties_typeProperties_userName": {
+						"value": "[parameters('githubls_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
