@@ -5,11 +5,11 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/ashuadsul1998-ashu/data-engineer/blob/main/samplecode/calculator.py",
+			"url": "https://raw.githubusercontent.com/ashuadsul1998-ashu/data-engineer/refs/heads/main/samplecode/calculator.py?token=GHSAT0AAAAAAERAWTHT5YZRLF7A4JFMEXN62X66GBQ",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Basic",
 			"userName": "CloudSA90ad2881",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEIxOUQ4QkY0LTdCNzQtNDYzRi1CRTUwLTRDNjNCNzc2NzM2M183YzE3OWZlMS05NmM5LTQ1MjItODAxMy0yZGRhNzVjNmFiYjciDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEIxOUQ4QkY0LTdCNzQtNDYzRi1CRTUwLTRDNjNCNzc2NzM2M182ZWRlOGE1Zi1iNWEwLTRkNjEtYjk1OC00ZDEwNjY0MzRjZGQiDQp9"
 		},
 		"connectVia": {
 			"referenceName": "AutoResolveIntegrationRuntime",
