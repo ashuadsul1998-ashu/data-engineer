@@ -1,0 +1,7 @@
+{
+	"name": "AzureTableStorage722",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/69738c80-44fa-4f35-aea7-81c556046f8f/resourceGroups/bankOfMaha123/providers/Microsoft.Storage/storageAccounts/bomstorage333uat",
+		"groupId": "table"
+	}
+}
