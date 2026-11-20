@@ -9,9 +9,9 @@
 			"database": "bom_db123",
 			"encrypt": "mandatory",
 			"trustServerCertificate": false,
-			"authenticationType": "SQL",
+			"authenticationType": "Windows",
 			"userName": "CloudSA90ad2881",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEIxOUQ4QkY0LTdCNzQtNDYzRi1CRTUwLTRDNjNCNzc2NzM2M18wMDgwZWYxMS0zNThkLTRkZTgtYTQ4Zi1iNWYxYzRhMjdjNzgiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEIxOUQ4QkY0LTdCNzQtNDYzRi1CRTUwLTRDNjNCNzc2NzM2M19jNzcyNGE2ZS04YTgwLTRlNTAtODIzZC1iYjljZjI0MjFhMjMiDQp9"
 		},
 		"connectVia": {
 			"referenceName": "AutoResolveIntegrationRuntime",
